@@ -34,11 +34,10 @@ export class HomePage {
     this.auth.refreshToken()
     .subscribe(response => {
       this.auth.successfulLogin(response.headers.get('Authorization'));
-    }),
-    error =>{
-
-    }
-  this.navCtrl.setRoot('CategoriasPage');
+      this.navCtrl.setRoot('CategoriasPage');
+    },
+    error =>{});
+    
   }
 
   login(){
