@@ -51,5 +51,8 @@ export class HomePage {
     this.navCtrl.setRoot('CategoriasPage');
   }
 
+  signup(){
+    this.navCtrl.push('SignupPage')
+  }
 
 }
